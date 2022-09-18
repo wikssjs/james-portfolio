@@ -1,0 +1,339 @@
+body{
+    /*height: 100vh;*/
+    background:url(../img/cube-sea-3429485_960_720.jpg) center/cover;
+}
+
+#pageWrapper{
+    display: flex;
+   min-height: 70vh;
+    max-width: 100000px;
+    background:wheat;
+    flex-direction: column;
+}
+p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 550;
+}
+.name{
+    width: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav-container ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+    gap: 100px;
+}
+ul a:hover{
+    color:snow
+}
+a{
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-size: 1.5em;
+}
+
+.logo-container{
+    display: flex;
+    flex-direction: row;
+}
+.logo{
+    width: 30px;
+    margin-right: 20px;
+}
+#content-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#content-Wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    background:#EEA47FFF;
+}
+
+#content-Wrapper h1{
+    color: #232b2b;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4em;
+}
+
+.about-me{
+    display: flex;
+    flex-direction: column;
+    height: 510px;
+    flex-wrap: wrap;
+}
+.link-container{
+    display: flex;
+    width: 400px;
+    flex-direction: row;
+    flex-wrap:wrap-reverse;
+    margin-top: 20px;
+    gap: 50px;
+}
+
+.link-container button{
+    background-color: #FF5800;
+    border-style: none;
+    width: 100px;
+    height: 30px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.new_dev_logo{
+width: 200px;
+height: 200px;
+}
+
+
+.project-container{
+    display: flex;
+    flex-direction: row;
+    width: 80px;
+    justify-content:space-around;
+}
+
+.greeting{
+    font-size: 3em;
+}
+
+.contact-container{
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact{
+    font-size: 1.5em;
+}
+.skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #232b2b;
+}
+
+.skills-container {
+    background-color:#00539CFF;
+    color: white
+}
+
+.skills-container img{
+    width: 50px;
+    align-items: flex-end;
+}
+.skills-container img:hover{
+    transform: translateX(2px);
+    background-color: #EAF6F6;
+    border-radius: 50px;
+    background-size: 2px;
+}
+
+.skill-details-wrapper{
+    background-color:antiquewhite;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.skill-details-wrapper h1{
+    color: #232b2b;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 5em;
+    text-decoration: underline;
+}
+.separator{
+    background-color:antiquewhite;
+    height: .2px;
+
+}
+
+.skill-details-wrapper img{
+    width: 500px;
+    height: 410px;
+}
+.list-container{
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+}
+
+img[alt="menu"]{
+    display: none;
+}
+.programming{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.programming img{
+    width: 100px;
+    height: 100px;
+}
+
+
+/*MOBILE*/
+@media only screen and (max-width : 40em) {
+    .nav-item li{
+        display: none;
+    }
+    .nav-container ul{
+        display:flex;
+        gap: 0px;
+        justify-content:space-between;
+    }
+    img[alt="menu"]{
+        display: block;
+        width: 20px;
+    }
+    #content-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about-me{
+        justify-content: flex-start;
+    }
+    #pageWrapper{
+        justify-content: center;
+    }
+    .projects-grid-row{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-left: -25px;
+     }
+
+     Main{
+        margin-left: 1px;
+     }
+
+     .separator{
+        display: none;
+     }
+
+     #content-Wrapper{
+        width: calc( 50% - 1px );
+        width: -moz-calc( 50% - 10px );
+        width: -webkit-calc( 100% - 1px ); 
+     }
+
+     .skill-details-wrapper{
+            flex-direction: column;
+            width: calc( 50% - 1px );
+            width: -moz-calc( 50% - 1px );
+            width: -webkit-calc( 100% - 1px ); 
+     }
+     body{
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+     }
+}
+
+/*TABLET*/
+@media  only screen and (min-width:40em) and (max-width:60em) {
+    .nav-item li{
+        display: none;
+    }
+    .skill-details-wrapper{
+        flex-direction: column;
+            width: calc( 50% - 1px );
+            width: -moz-calc( 50% - 1px );
+            width: -webkit-calc( 100% - 1px ); 
+        }  
+    .about-me{
+        margin: 0;
+    }
+    .nav-container ul{
+        display:flex;
+        gap:0;
+        justify-content: space-between;
+        background-color: #FF5800;    
+    }
+    img[alt="menu"]{
+        display: block;
+        width: 20px;
+    }
+    
+    #content-container{
+        flex-direction: column;
+    }
+    .projects-grid-row{
+        display: grid;
+        grid-template-columns: repeat(3,443px);
+     }
+    img[alt="new_dev_logo"]{
+        margin: auto;
+    }
+    body{
+        overflow: visible;
+    }
+    Main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #content-Wrapper{
+        width: calc( 85% - 1px );
+        width: -moz-calc( 85% - 1px );
+        width: -webkit-calc( 100% - 1px );    }
+
+    .separator{
+        display: none;
+    }
+    
+}
+
+@media only screen and(min-width:65em) {
+    .nav-container a{
+        background-color: #FF5800;
+    }
+}
+
+/**projects**/
+.pageWrapper{
+    display: flex;
+    flex-direction: column;
+}
+.projects-grid-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.projects-grid-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.projects-grid-container H1{
+    color: #232b2b;
+}
+
+figure img{
+    width: 200px;
+    margin-left: 100px;
+}
+figure{
+    width: 400px;
+    align-items: center;
+    background-color: #EEA47FFF;
+}
+
+figcaption{
+    background-color: #00539CFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+h1{
+    font-size: 100px;
+    margin: auto;
+    color: #EAF6F6;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
