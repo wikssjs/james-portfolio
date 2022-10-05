@@ -1,12 +1,39 @@
 body {
-    /*height: 100vh;*/
     background: url(../img/cube-sea-3429485_960_720.jpg) center/cover;
+}
+#navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    top: 0;
+    position: sticky;
+    width: 100%;
+    text-shadow: 0 0 .3rem rgba(0, 0, 0, .6);
+    transition: 200ms ease-in-out color;
+    height: 60px;
+}
+
+.logo-container{
+}
+.nav-scroll{
+    background-color:#EAF6F6
+}
+
+#follow-cursor{
+    background-color: rgba(124, 118, 118, 0.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    transition: 0.2s ease-out;
 }
 
 #pageWrapper {
     display: flex;
     min-height: 70vh;
-    max-width: 100000px;
+    max-width: 2000px;
     background: wheat;
     flex-direction: column;
 }
@@ -28,14 +55,17 @@ p {
 .nav-container ul {
     display: flex;
     flex-direction: row;
-    list-style-type: none;
     justify-content: center;
     gap: 100px;
+    list-style: none;
+    align-items: center;
 }
 
 /* nav item on hover*/
 ul a:hover {
-    color: snow
+    color: snow;
+    box-shadow: rgba(0, 0, 0, .6);
+    
 }
 
 a {
@@ -49,11 +79,14 @@ a {
 .logo-container {
     display: flex;
     flex-direction: row;
+    margin-right: 300px;
+}
+.logo-container div {
+    font-size: 2em;
 }
 
 .logo {
-    width: 30px;
-    margin-right: 20px;
+    width: 50px;
 }
 
 /*Main content container*/
@@ -72,16 +105,34 @@ a {
 }
 
 #leftSide-Wrapper h1 {
+    margin-left: 3px;
     color: #232b2b;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 4em;
+    font-family:'Roboto',sans-serif;
+    font-size: 2em;
+}
+
+#leftSide-Wrapper pre{
+    font-size: 6em;
+    font-family: 'Peralta', cursive;
+    margin: auto;
+}
+
+#leftSide-Wrapper h3{
+    font-size: 6em;
+    margin-top: -30px;
+    margin-left: 100px;
 }
 
 .about-me {
-    display: flex;
-    flex-direction: column;
     height: 510px;
-    flex-wrap: wrap;
+}
+
+.about-me p {
+    margin-left: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.4em;
+    max-width: 700px;
 }
 
 .greeting {
@@ -164,6 +215,17 @@ img[alt="menu"] {
         display: none;
     }
 
+    .logo-container{
+        margin-left: -70px;
+    }
+   
+    header{
+        background-color: wheat;
+        position: fixed;
+        width: 98.1%;
+        margin-top: -10px;
+    }
+
     .nav-container ul {
         gap: 0;
         justify-content: space-around;
@@ -205,6 +267,7 @@ img[alt="menu"] {
         width: calc(50% - 1px);
         width: -moz-calc(50% - 10px);
         width: -webkit-calc(100% - 1px);
+        height: 580px;
     }
 
     .RightSide-Wrapper {
@@ -226,6 +289,7 @@ img[alt="menu"] {
         display: none;
     }
 
+
     .RightSide-Wrapper {
         flex-direction: column;
         width: calc(50% - 1px);
@@ -237,13 +301,19 @@ img[alt="menu"] {
         margin: auto;
     }
 
-    .about-me {
-        margin: 0;
+    .about-me p{
+        margin-left: 30px;
     }
 
     .nav-container ul {
         display: flex;
-        justify-content: space-around;
+        flex-direction:row;
+    }
+
+    .nav-container{
+    }
+    .logo-container{
+        margin-left: -70px;
     }
 
     img[alt="menu"] {
@@ -273,6 +343,7 @@ img[alt="menu"] {
         width: calc(85% - 1px);
         width: -moz-calc(85% - 1px);
         width: -webkit-calc(100% - 1px);
+        height: 550px;
     }
 
     .separator {
@@ -280,6 +351,62 @@ img[alt="menu"] {
     }
 
 }
+
+/**Education**/
+
+.education-wrapper {
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+}
+
+.education H1 {
+    color: #232b2b;
+    font-size: 3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.education h2 {
+    color: #00539CFF;
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.education pre {
+    color: gray;
+    margin-top: -20px;
+    font-size: 1.5em;
+}
+
+.education p {
+    font-size: 1.5em;
+    margin-top: -15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /**projects**/
 .pageWrapper {
@@ -312,15 +439,29 @@ figure {
     width: 400px;
     align-items: center;
     background-color: #EEA47FFF;
+    border-radius: 50px;
 }
 
 figcaption {
     background-color: #00539CFF;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     color: white;
+    border-radius: 20px;
+    transform: translateZ(200px) scaleY(0);
+    padding: 40px 25px;
+    transform-origin: top;
+    transition: 0.5s;
 }
+figure:hover figcaption{
+    transform:perspective(6000px) rotateX(2deg) rotateY(2deg) rotateZ(0deg)
+    translateX(0px) translateY(0px) translateZ(180px) scaleY(0);
+    transform-style: preserve-3d;
+    transform: translate(0px);
+}
+
 
 h1 {
     font-size: 100px;
