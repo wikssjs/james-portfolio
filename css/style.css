@@ -36,6 +36,7 @@ body {
     max-width: 2000px;
     background: wheat;
     flex-direction: column;
+    
 }
 
 p {
@@ -59,6 +60,13 @@ p {
     gap: 100px;
     list-style: none;
     align-items: center;
+    animation: bigger;
+    animation-duration: 1s;
+    border-radius: 20px;
+    transform: scale(1) perspective(100000000px);
+    transition: all ease 1600ms;
+    box-shadow: -4px -4px 20px black;
+    transform-origin: top;
 }
 
 /* nav item on hover*/
@@ -96,12 +104,22 @@ a {
     justify-content: center;
 }
 
+@keyframes bigger {
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+  }
 
-#leftSide-Wrapper {
+#leftSide-Wrapper{
     display: flex;
     flex-direction: column;
     width: 500px;
     background: #EEA47FFF;
+    animation: bigger;
+    animation-duration: 1s;
+    border-radius: 20px;
+    transition: all ease 1600ms;
+    box-shadow: -4px -4px 20px black;
+    transform-origin: top;
 }
 
 #leftSide-Wrapper h1 {
@@ -150,7 +168,8 @@ a {
 
 .Links-Wrapper {
     background-color: #00539CFF;
-    color: white
+    color: white;
+    border-radius: 20px;
 }
 
 .Links-Wrapper img {
@@ -170,6 +189,12 @@ a {
     display: flex;
     flex-direction: column;
     width: 500px;
+    animation: bigger;
+    animation-duration: 1s;
+    border-radius: 20px;
+    transition: all ease 1600ms;
+    box-shadow: 4px -4px 20px #232b2b;
+    transform-origin: top;
 }
 
 .RightSide-Wrapper h1 {
@@ -189,6 +214,11 @@ a {
 .RightSide-Wrapper img {
     width: 427px;
     height: 410px;
+    animation: bigger;
+    animation-duration: 1s;
+    border-radius: 20px;
+    transition: all ease 1600ms;
+    transform-origin: top;
 }
 
 /*menu button for small screen*/
@@ -360,6 +390,12 @@ img[alt="menu"] {
     justify-content: center;
     margin: auto;
     width: 100%;
+    animation: bigger;
+    animation-duration: 1s;
+    border-radius: 20px;
+    transition: all ease 1600ms;
+    box-shadow: -4px -4px 20px black;
+    transform-origin: top;
 }
 
 .education {
@@ -440,6 +476,12 @@ figure {
     align-items: center;
     background-color: #EEA47FFF;
     border-radius: 50px;
+    animation: bigger;
+    animation-duration: 1s;
+    transform: scale(1) perspective(100000000px);
+    transition: all ease 1600ms;
+    box-shadow: -4px -4px 20px black;
+    transform-origin: top;
 }
 
 figcaption {

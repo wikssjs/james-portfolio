@@ -25,8 +25,8 @@ const move = (e)=>{
         var x = !isTouchDevise() ? e.pageX : e.touches[0].pageX;
         var y = !isTouchDevise() ? e.pageY : e.touches[0].pageY;
     }catch(e){}
-    myDiv.style.left = x-30+"px";
-    myDiv.style.top = y-30+"px";
+    myDiv.style.left = x+"px";
+    myDiv.style.top = y+"px";
 }
 document.addEventListener('mousemove',(e)=>{
     move(e);
