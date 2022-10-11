@@ -14,33 +14,31 @@
     <title>James-portofolio</title>
     <script type="module" src="./js/script.js"></script>
 </head>
-<div id="follow-cursor"></div>
 
 <body>
     <div id="pageWrapper">
         <header id="navigation">
-            <nav class="nav-container">
-                <ul class="nav-item">
-                    <a href="./index.html">
-                        <div class="logo-container">
-                            <img class="logo" src="./img/name_logo.png" alt="">
-                            <div class="name">JAMES</div>
-                        </div>
-                    </a>
-                    <a href="./home.html">
-                        <li>Projects</li>
-                    </a>
-                    <a href="">
-                        <li>About</li>
-                    </a>
-                    <a href="">
-                        <li>Contact</li>
-                    </a>
-                    <a href="">
-                        <img src="./img/menu_logo.png" alt="menu">
-                    </a>
-                </ul>
-            </nav>
+            <div class="nav-wrapper">
+                <nav class="nav-container">
+                    <a href="#" class="my_name nav-link">JAMES</a>
+                    <ul class="nav-menu">
+                        <li href="#about-me" class="nav-link">
+                            <a href="#about-me" class="nav-link">About me</a>
+                        </li>
+                        <li href="#projects" class="nav-link">
+                            <a href="#projects" class="nav-link">Projects</a>
+                        </li>
+                        <li href="#contact" class="nav-link">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+            </div>
         </header>
         <div class="separator"></div>
         <Main>
@@ -48,22 +46,26 @@
                 <div id="leftSide-Wrapper">
                     <div class="title">
                         <h1>Web/Android developer</h1>
-                        <Pre>James
-        Bell_</Pre>
+                        <pre data-wait="3000" data-words='["James Bell_","Android Dev","Web Dev"]'
+                            class="txt-type"></pre>
                     </div>
-                    <div class="about-me">
-                        <p></p>
-                        <p class="about">I'm a junior developer with a working proficiency in HTML,CSS,JavaScript
+                    <div class="presentation">
+                        <p class="present">I'm a junior developer with a working proficiency in HTML,CSS,JavaScript
                             ,NodeJs,ExpressJ,MongoDb,i am also very comfortable with the Linux command line, using Git
                             version control, android development using Java and android Studio
                         </p>
 
+                        <img src="./img/style_image.png" alt="DecorationImage" height="300px">
                     </div>
                     <div class="Links-Wrapper">
-                        <a href=""><img src="./img/github_logo.png" alt=""></a>
-                        <a href=""><img src="./img/linkedin_logo.png" alt=""></a>
-                        <a href=""><img src="./img/instagram_logo.png" alt=""></a>
-                        <a href=""><img src="./img/main_logo.png" alt=""></a>
+                        <a href="https://github.com/wikssjs" target="_blank"><img src="./img/github_logo.png"
+                                alt=""></a>
+                        <a href="https://www.linkedin.com/in/james-bell-199ba9222/" target="_blank"><img src="./img/linkedin_logo.png"
+                                alt="githubLink"></a>
+                        <a href="https://www.instagram.com/james_joestarr/?hl=en" target="_blank"><img src="./img/instagram_logo.png"
+                                alt="linkedinLink"></a>
+                        <a href="https://mail.google.com/mail/u/4/#inbox?compose=new" target="_blank"><img src="./img/main_logo.png"
+                                alt="instagramLink"></a>
                     </div>
                 </div>
                 <div class="RightSide-Wrapper">
@@ -74,79 +76,167 @@
                         <img src="./img/html_logo.png" alt="html">
                         <img src="./img/css_logo.png" alt="css">
                         <img src="./img/javaScript_logo.png" alt="javascript">
-                        <img src="./img/sql_logo.png" alt="">
+                        <img src="./img/sql_logo.png" alt="sql">
                     </div>
                     <img src="./img/gettyimages-1314489757-612x612-removebg-preview.png" alt="photo">
                 </div>
 
             </div>
 
-            <div class="education-wrapper">
+            <div class="personal" id="about-me">
+                <div class="about-me">
+                    <h1>About me</h1>
+                    <span></span>
+                    <section id="paragraph">
+                        <p>Hello my name is James Bell, currently a student at the Depatment of Commputer Programming,
+                            La Cité Collegiale, Ottawa, CANADA.
+                        </p>
+                        <p>
+                            I am interested in Web development and Android development I always thought that
+                            Programming had a lot things to learn.
+                        </p>
+                        <p>
+                            This is a personal website that i have created to present the projects
+                            i did while i was learning at School.
+                        </p>
+                    </section>
+                </div>
                 <div class="education">
                     <h1>Education</h1>
-                    <h2>La Cité Collegiale</h2>
-                    <pre>2022 - Now</pre>
-                    <p>Computer programming</p>
+                    <div class="school">
+                        <span></span>
+                        <span id="span"></span>
+                        <h2>La Cité Collegiale</h2>
+                        <pre>2022 - Now</pre>
+                        <p>Computer programming</p>
+                    </div>
                 </div>
             </div>
-
-            <div class="projects-grid-container">
+            <section id="projects">
                 <H1>MY PROJECTS</H1>
                 <div class="Projects-grid-Wrapper">
                     <figure>
-                        <img src="./img/name_logo.png" alt="">
+                        <span>BLACKJACK</span>
+                        <img src="./img/blackjack_.png" alt="project">
                         <figcaption>
-                            <h2>BLACKJACK</h2>
-                            <span></span>
-                            <a href="http://dribbble.com/shots/1115632-Camera">Take a look</a>
+                            <p>USED STACK :</p>
+                            <div>
+                                <img src="./img/java_logo.png" alt="coding-logo">
+                                <img src="./img/android_logo.png" alt="coding-logo">
+                            </div>
+                            <div>Created this blackjack app with Android Studio using java</div>
+                            <a target="_blank" href="https://github.com/wikssjs/Blackjack"><img
+                                    src="./img/github_logo.png" alt="coding-logo"></a>
                         </figcaption>
                     </figure>
 
                     <figure>
-                        <img src="./img/name_logo.png" alt="">
+                        <span>E-COMMERCE</span>
+                        <img src="./img/ecommerce.jpg" alt="project">
                         <figcaption>
-                            <h2>Camera</h2>
-                            <span>Jacob Cummings</span>
-                            <a href="http://dribbble.com/shots/1115632-Camera">Take a look</a>
+                            <p>USED STACK :</p>
+                            <div>
+                                <img src="./img/java_logo.png" alt="coding-logo">
+                                <img src="./img/android_logo.png" alt="coding-logo">
+                                <img src="./img/firebase_28dp.png" alt="coding-logo">
+                            </div>
+                            <div>Created this E-Commerce app with Android Studio using java as language and firebase
+                            </div>
+                            <a href="https://github.com/wikssjs/JamesEcommerce" target="_blank"><img
+                                    src="./img/github_logo.png" alt="coding-logo"></a>
                         </figcaption>
                     </figure>
                     <figure>
-                        <img src="./img/name_logo.png" alt="">
+                        <span>BLACKJACK</span>
+                        <img src="./img/blackjack_.png" alt="project">
                         <figcaption>
-                            <h2>Camera</h2>
-                            <span>Jacob Cummings</span>
-                            <a href="http://dribbble.com/shots/1115632-Camera">Take a look</a>
-                        </figcaption>
-                    </figure>
-
-                    <figure>
-                        <img src="./img/name_logo.png" alt="">
-                        <figcaption>
-                            <h2>Camera</h2>
-                            <span>Jacob Cummings</span>
-                            <a href="http://dribbble.com/shots/1115632-Camera">Take a look</a>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <img src="./img/name_logo.png" alt="">
-                        <figcaption>
-                            <h2>Camera</h2>
-                            <span>Jacob Cummings</span>
-                            <a href="http://dribbble.com/shots/1115632-Camera">Take a look</a>
+                            <p>USED STACK :</p>
+                            <div>
+                                <img src="./img/java_logo.png" alt="coding-logo">
+                                <img src="./img/android_logo.png" alt="coding-logo">
+                            </div>
+                            <a href=""><img src="./img/github_logo.png" alt="coding-logo"></a>
                         </figcaption>
                     </figure>
 
                     <figure>
-                        <img src="./img/name_logo.png" alt="">
+                        <span>BLACKJACK</span>
+                        <img src="./img/blackjack_.png" alt="project">
                         <figcaption>
-                            <h3>Camera</h3>
-                            <span>Jacob Cummings</span>
-                            <a href="http://dribbble.com/shots/1115632-Camera">Take a look</a>
+                            <p>USED STACK :</p>
+                            <div>
+                                <img src="./img/java_logo.png" alt="coding-logo">
+                                <img src="./img/android_logo.png" alt="coding-logo">
+                            </div>
+                            <a href=""><img src="./img/github_logo.png" alt="coding-logo"></a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <span>BLACKJACK</span>
+                        <img src="./img/blackjack_.png" alt="project">
+                        <figcaption>
+                            <p>USED STACK :</p>
+                            <div>
+                                <img src="./img/java_logo.png" alt="coding-logo">
+                                <img src="./img/android_logo.png" alt="coding-logo">
+                            </div>
+                            <a href=""><img src="./img/github_logo.png" alt="coding-logo"></a>
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <span>BLACKJACK</span>
+                        <img src="./img/blackjack_.png" alt="project">
+                        <figcaption>
+                            <p>USED STACK :</p>
+                            <div>
+                                <img src="./img/java_logo.png" alt="coding-logo">
+                                <img src="./img/android_logo.png" alt="coding-logo">
+                            </div>
+                            <a href=""><img src="./img/github_logo.png" alt="coding-logo"></a>
                         </figcaption>
                     </figure>
                 </div>
-            </div>
+            </section>
+
+            <section id="contact">
+                <div class="contactWrapper">
+                    <div>
+                        <span class="contact-tittle">Phone :</span>
+                        <span class="contact-data data1">3293902399</span>
+                    </div>
+                    <div>
+                        <span class="contact-tittle">Instagram :</span>
+                        <span class="contact-data data2">james_joestarr</span>
+                    </div>
+                    <div>
+                        <span class="contact-tittle">Email :</span>
+                        <span class="contact-data data3">belljamesp@gmail.com</span>
+                    </div>
+                    <div class="contacts__social">
+                        <ul>
+                            <li><a href="">Instagram</a></li>
+                            <li><a href="">Linkedin</a></li>
+                            <li><a href="">GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contact-container">
+                    <h1>GET IN TOUCH</h1>
+                    <form action="https://formspree.io/f/xbjbkjdp" method="POST">
+                        <input type="text" id="Name" name="name" placeholder="Your Name" required>
+                        <input type="email" id="Email" name="email" placeholder="Email id" required>
+                        <textarea name="message" rows="4" placeholder="Type Your message here" required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+
+            </section>
         </Main>
+        <footer>
+            <div>© 2022 James Bell.</div>
+            <div>All Rights Reserved</div>
+        </footer>
     </div>
 </body>
 
