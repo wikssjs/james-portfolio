@@ -11,6 +11,8 @@ window.addEventListener('scroll',()=>{
     if(window.scrollY >=30){
         nav.style.backgroundColor = "white"
         navWrapper.style.backgroundColor = "white";
+        navMenu.classList.add('bg-light')
+        
         for(let a of myAs){
         a.style.color = "black";
     }
@@ -22,6 +24,8 @@ window.addEventListener('scroll',()=>{
    }else{
     nav.style.backgroundColor = "black"
     navWrapper.style.backgroundColor = "#343434";
+    navMenu.classList.remove('bg-light')
+
 
     for(let a of myAs){
         a.style.color = "white";

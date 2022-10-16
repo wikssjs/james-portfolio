@@ -18,12 +18,7 @@ html, body {
     height: 60px;
     z-index: 100;
 }
-.pageWrapper{
-    max-width: 2000px;
-}
-.nav-scroll{
-    background-color:#EAF6F6;
-}
+
 .nav-wrapper{
     top :0;
     position: fixed;
@@ -31,10 +26,6 @@ html, body {
     border-radius: 20px;
     box-shadow: 2px 2px 2rem 5px rgba(0, 0, 0, .6);
 
-}
-
-.nav-menu{
-    transition: 0s;
 }
 
 #pageWrapper {
@@ -50,14 +41,6 @@ p {
     font-weight: 550;
 }
 
-/*My name*/
-.name {
-    width: 20px;
-    font-weight: 600;
-    font-size: 2px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
 .nav-container{
     display: flex;
     justify-content: space-around;
@@ -66,9 +49,8 @@ p {
 }
 
 /*navigation bar*/
-.nav-container ul {
+.nav-menu{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     gap: 70px;
     list-style: none;
@@ -81,22 +63,23 @@ p {
 }
 
 /* nav item on hover*/
-ul a:hover {
-    color: snow;
+.nav-link:hover {
     box-shadow: rgba(0, 0, 0, .6);
     text-decoration: underline;
 }
+
 a {
     text-decoration: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color:white;
-    font-size: 1.5em;
+    font-size:1.6em;
 }
 
 .hamburger{
     display: none;
     cursor: pointer;
 }
+
 .bar{
     display: block;
     width: 25px;
@@ -107,24 +90,9 @@ a {
     background-color: white;
 }
 
-/*name and logo*/
-.logo-container {
-    display: flex;
-    flex-direction: row;
-    margin-right: 300px;
-}
-.logo-container div {
-    font-size: 2em;
-}
-
-.logo {
-    width: 50px;
-}
-
 /*Main content container*/
 #content-container {
     display: flex;
-    flex-direction: row;
     justify-content: center;
 }
 
@@ -138,10 +106,8 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 500px;
     background: #EEA47FFF;
-    animation: bigger;
-    animation-duration: 1s;
+    animation: bigger 1s;
     border-radius: 20px;
     transition: all ease 1600ms;
     box-shadow: -4px -4px 20px black;
@@ -170,8 +136,6 @@ a {
     letter-spacing: 1.5px;
 }
 
-.presentation img{
-}
 .title H1{
     letter-spacing: 3px;
     padding-top: 20px;
@@ -220,9 +184,6 @@ a {
     z-index: 30;
 }
 
-.greeting {
-    font-size: 3em;
-}
 
 /*my personnals links*/
 .Links-Wrapper {
@@ -252,6 +213,7 @@ a {
     background-color: antiquewhite;
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 500px;
     animation: bigger;
     animation-duration: 1s;
@@ -275,9 +237,9 @@ a {
 
 }
 
-.RightSide-Wrapper img {
-    width: 427px;
-    height: 410px;
+.RightSide-Wrapper img{
+    width: 300px;
+    height: 420px;
     animation: bigger;
     animation-duration: 1s;
     border-radius: 20px;
@@ -285,10 +247,6 @@ a {
     transform-origin: top;
 }
 
-/*menu button for small screen*/
-img[alt="menu"] {
-    display: none;
-}
 
 .Programming-logo {
     display: flex;
@@ -314,16 +272,6 @@ img[alt="menu"] {
     background-color:#343434	;
     box-shadow: -4px 4px 20px black;
 }
-
-.personalWrapper{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.personalWrapper img{
-
-}
-
 
 /**Education**/
 /*About me*/
@@ -351,11 +299,6 @@ img[alt="menu"] {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.about-me pre {
-    color: gray;
-    margin-top: -20px;
-    font-size: 1.5em;
-}
 
 #paragraph{
 margin-top: 80px;
@@ -426,7 +369,6 @@ margin-top: 80px;
     left: 23px;
     top: 670px;
     background-color: #232b2b;
-    height: 200px;
     width: 1.5px;
 }
 
@@ -479,15 +421,6 @@ margin-top: 80px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.projects-grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.projects-grid-container H1 {
-    color: #232b2b;
 }
 
 
@@ -783,6 +716,9 @@ footer div{
     .education{
         width: -webkit-calc(100% - 1px);
     }
+    .indicator{
+        display: none;
+    }
     .education h1{
         font-size: 3em;
     }
@@ -822,6 +758,9 @@ footer div{
     .contact-tittle{
         font-size: 1.2em;
     }
+    .nav-menu.bg-light{
+        background-color:white;
+    }
  }
 
 /*Display for MOBILE*/
@@ -852,6 +791,7 @@ footer div{
         background-color:#343434;
         flex-direction: column;
         border-radius: 10px;
+        gap: 50px;
     }
     .nav-menu a{
         margin: 16px auto;
@@ -942,6 +882,9 @@ footer div{
     .education{
         width: 100%;
     }
+    .indicator{
+        display: none;
+    }
     .presentation img{
        display: none;
     }
@@ -971,8 +914,13 @@ footer div{
         margin-left: 80px;
     }
 
+    .nav-menu.bg-light{
+        background-color:white;
+    }
 }
 
+
+/*Tablet*/
 @media(min-width:600px) and (max-width:700px){
     .hamburger{
         display: block;
@@ -1130,10 +1078,16 @@ footer div{
         flex-direction: column;
         align-items: center;
     }
+    .nav-menu.bg-light{
+        background-color:white;
+    }
+    
 }
+
 
 /*Display for TABLET*/
 @media (min-width:700px) and (max-width:1000px) {
+
    .nav-wrapper{
     width: 90%;
     justify-content: space-around;
@@ -1164,7 +1118,6 @@ footer div{
         top: -100%;
         background-color:#343434;
         transition: 0.3s;
-
     }
     .nav-container{
         display: flex;
@@ -1205,7 +1158,6 @@ footer div{
     }
 
     #content-container{
-        background-color: #97b91d;
         width: -webkit-calc(100% - 1px);
         min-height: 500px;
     }
@@ -1271,17 +1223,17 @@ footer div{
         width: -webkit-calc(100% - 1px);
         height: 550px;
     }
-
+    
     .separator {
         display: none;
     }
     .about-me{
         width: 100%;
-     }
-     .education{
+    }
+    .education{
         width: 100%;
-     }
-     .about-me span{
+    }
+    .about-me span{
         left: 5%;
         width: 2px;
         transition: 1s;
@@ -1301,13 +1253,20 @@ footer div{
         flex-direction: column;
         align-items: center;
     }
-
+    .nav-menu.bg-light{
+        background-color:white;
+    }
+    
 }
+
+
+
+/* L Screen*/
 @media (min-width:1000px) and (max-width:1100px) {
     .about-me{
         width: 100%;
     }
-   
+    
     .education{
         width: 100%;
     }
@@ -1322,10 +1281,16 @@ footer div{
     .nav-menu{
         margin-right: 20px;
     }
+    #leftSide-Wrapper{
+        width: 50%;
+    }
+    .RightSide-Wrapper{
+        width: 50%;
+    }
 }
 
 
-
+/*Xl Screen*/
 @media(min-width:1100px) {
    
     .my_name{
@@ -1346,11 +1311,16 @@ footer div{
     .about-me p{
         width: 600px;
     }
+
+    .about-me span{
+        margin-left: -30px;
+        height: 250px;
+    }
     #leftSide-Wrapper{
-        width: 30%;
+        width: 700px;
     }
     .RightSide-Wrapper{
-        width: 30%;
+        width: 700px;
     }
     
 }
