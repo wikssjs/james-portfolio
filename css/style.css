@@ -535,7 +535,6 @@ h1 {
     color: #EAF6F6;
     letter-spacing: 3px;
     font-family: 'Roboto', sans-serif;
-;
 }
 
 .contactWrapper{
@@ -756,8 +755,15 @@ footer div{
     }
 
     .contact-tittle{
-        font-size: 1.2em;
+        font-size: 1em;
     }
+    .contact-data{
+        font-size: .7em;
+        color: #EAF6F6;
+        letter-spacing: 3px;
+        font-family: 'Roboto', sans-serif;
+    }
+
     .nav-menu.bg-light{
         background-color:white;
     }
