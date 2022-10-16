@@ -647,7 +647,7 @@ footer div{
         top: -400%;
         left: 0;
         transition: 0.3s;
-        gap:0;
+        gap:50px;
         background-color:#343434;
         flex-direction: column;
         border-radius: 10px;
