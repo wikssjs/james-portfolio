@@ -5,6 +5,41 @@ html, body {
     position: relative
   }
 
+#cursor{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.5);
+    position: absolute;
+    border-style: solid;
+    border-color:#232b2b;
+    z-index: 500;
+    transition-duration:  100ms;
+    transition-timing-function:ease-in-out ;
+    animation: cursorAnim .5s infinite alternate;
+}
+
+#cursor::after{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border: 8px solid rgba(255,255,255,0.5);
+    border-radius: 50%;
+    opacity: .5;
+    top:-8px;
+    left: -8pc;
+}
+
+@keyframes cursorAnim{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(.7);
+    }
+}
+
+
 
 #navigation{
     display: flex;

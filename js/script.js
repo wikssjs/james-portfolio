@@ -111,28 +111,20 @@ document.querySelectorAll('.nav-link').forEach(n =>n.
     }));
 
 
-/*let myDiv = document.getElementById("follow-cursor")
-function isTouchDevise(){
-    try{
-        document.createEvent("TouchEvent");
-        return true;
-    }catch(e){
-        return false;
+
+
+    let cursor = document.getElementById('cursor');
+
+    document.addEventListener('mousemove',e=>{
+        cursor.setAttribute("style","top: "+(e.pageY-10)+"px; left: "+(e.pageX-10)+"px")
+    })
+
+    document.addEventListener('mouseover', e=>{
+        if(e.target=='A'){
+            console.log(e);
+        }
+    })
+    
+    function change(){
+        console.log('caca')
     }
-}
-
-
-const move = (e)=>{
-    try{
-        var x = !isTouchDevise() ? e.pageX : e.touches[0].pageX;
-        var y = !isTouchDevise() ? e.pageY : e.touches[0].pageY;
-    }catch(e){}
-    myDiv.style.left = x+"px";
-    myDiv.style.top = y+"px";
-}
-document.addEventListener('mousemove',(e)=>{
-    move(e);
-});
-document.addEventListener("touchmove",(e)=>{
-    move(e);
-})*/
