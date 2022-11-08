@@ -304,7 +304,8 @@ a {
     justify-content: space-evenly;
     align-items: center;
     animation: bigger;
-    background-color:#343434	;
+   /* background-color:#343434	;*/
+   background: url(../img/wave.svg) repeat space;
     box-shadow: -4px 4px 20px black;
 }
 
@@ -318,8 +319,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation: bigger;
-    animation-duration: 1s;
+    animation-duration: .5s;
     border-radius: 20px;
     transition: all ease 1600ms;
     box-shadow: -4px -4px 20px black;
@@ -446,6 +446,11 @@ margin-top: 80px;
 
 
 /**projects**/
+
+.fade-anim{
+    
+}
+
 #projects{
     display: flex;
     flex-direction: column;
@@ -485,11 +490,11 @@ figure {
     align-items: center;
     background-color: #EEA47FFF;
     border-radius: 50px;
-    animation: bigger;
+   /*animation: bigger;*/
     animation-duration: 1s;
-    transition: all ease 1600ms;
+   /* transition: all ease 1600ms;
     box-shadow: -4px -4px 20px black;
-    transform-origin: top;
+    transform-origin: top;*/
 }
 
 figcaption {

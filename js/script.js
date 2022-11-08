@@ -6,9 +6,31 @@ const hamburger = document.querySelector(".hamburger");
 const navWrapper = document.querySelector(".nav-wrapper");
 const navMenu = document.querySelector('.nav-menu');
 
+const figures = document.getElementsByTagName('figure');
+const aboutMe = document.querySelector('.about-me');
+const education = document.querySelector('.education');
+const projectH1 = document.querySelector('.project-h1');
 
 window.addEventListener('scroll',()=>{
+
+   let aboutMePosition = 150;
+   let educationPosition = 500;
+   let projectsPosition = 1000;
+
+
+   if(window.innerHeight>800&&window.innerHeight<900){
+        aboutMePosition -=100;
+        educationPosition-=100;
+        projectsPosition-=200;
+   }
+   if(window.innerHeight>900){
+    aboutMePosition -=120;
+    educationPosition-=200;
+    projectsPosition-=300;
+   }
+    
     if(window.scrollY >=30){
+        console.log(window.scrollY)
         nav.style.backgroundColor = "white"
         navWrapper.style.backgroundColor = "white";
         navMenu.classList.add('bg-light')
@@ -37,6 +59,23 @@ window.addEventListener('scroll',()=>{
     }
 }
    
+
+if(window.scrollY>projectsPosition){
+    for(var figure of figures){
+        figure.classList.add('animate__fadeInUp')
+    }
+    projectH1.classList.add('animate__fadeInUp');
+}
+
+    if(window.scrollY>aboutMePosition){
+        aboutMe.classList.add('animate__fadeInUp')
+    }
+
+    if(window.scrollY>educationPosition){
+        education.classList.add('animate__fadeInUp')
+    }
+
+
 })
 
 
