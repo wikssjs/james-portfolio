@@ -4,5 +4,5 @@
 ## Description
 Hello this is my personnal portfoolio
 
-* [Portfolio](jamesbell-portfolio.netlify.app) Link
+* [Portfolio](https://jamesbell-portfolio.netlify.app) Link
 
