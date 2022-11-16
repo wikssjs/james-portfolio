@@ -97,10 +97,30 @@ p {
     transform-origin: left;
 }
 
+
+li{
+    position: relative;
+    text-decoration: none;
+    letter-spacing: .5px;
+    font-size: .8em;
+    text-align: center;
+}
 /* nav item on hover*/
-.nav-link:hover {
+li:after{
+    content: "";
+    position: absolute;
     box-shadow: rgba(0, 0, 0, .6);
     text-decoration: underline;
+    background-color: #EEA47FFF;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+li:hover::after{
+    width: 100%;
 }
 
 a {
@@ -108,6 +128,7 @@ a {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color:white;
     font-size:1.6em;
+    padding: 0 10px;
 }
 
 .hamburger{
@@ -290,12 +311,15 @@ a {
     justify-content: center;
 }
 
-.Programming-logo img {
+.Programming-logo img{
     width: 100px;
     height: 100px;
+    padding: 5px;
 }
 
+.my_photo{
 
+}
 
 .personal{
     height: 800px;
@@ -324,6 +348,7 @@ a {
     transition: all ease 1600ms;
     box-shadow: -4px -4px 20px black;
     transform-origin: top;
+    display: none;
 }
 
 .about-me H1 {
