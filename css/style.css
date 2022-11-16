@@ -561,6 +561,7 @@ figure a:hover {
 
 figure span {
     position: absolute;
+    text-align: center;
     top: 2%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -568,7 +569,6 @@ figure span {
     font-weight: 900;
     color: #00539CFF;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-decoration: underline;
     box-shadow: 5px 5px 5px #232b2b;
 }
 
