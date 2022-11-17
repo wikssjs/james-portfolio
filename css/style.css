@@ -331,7 +331,11 @@ a {
     padding: 5px;
 }
 
-.my_photo {}
+.my_photo {
+    background-color:#232b2b;
+    box-shadow: 5px 5px 5px 5px;
+    transform: rotate(-5deg);
+}
 
 .personal {
     height: 800px;
