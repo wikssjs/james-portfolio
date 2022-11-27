@@ -491,11 +491,11 @@ a {
 
 
 
-figure img {
+figure img[alt="project"] {
     border-radius: 50px;
-    width: 350px;
-    padding: 25px;
-    height: 300px;
+    width: 90%;
+    height: 90%;
+    margin :21.5px;
     transition: 1s;
 }
 
