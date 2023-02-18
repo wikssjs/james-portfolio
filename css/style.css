@@ -160,7 +160,6 @@ li,a{
 #content-container {
     display: flex;
     justify-content: center;
-    height: 90vh;
 }
 
 @keyframes bigger {
