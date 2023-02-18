@@ -28,16 +28,16 @@
         <header id="navigation">
             <div class="nav-wrapper">
                 <nav class="nav-container">
-                    <a href="#" onmouseover=change class="my_name nav-link">JAMES</a>
+                    <a onmouseover=change class="my_name nav-link" id="james">JAMES</a>
                     <ul class="nav-menu">
-                        <li href="#about-me" class="nav-link">
-                            <a href="#about-me" class="nav-link">About me</a>
+                        <li class="nav-link" id="about-lien">
+                            About me
                         </li>
-                        <li href="#projects" class="nav-link">
-                            <a href="#projects" class="nav-link">Projects</a>
+                        <li class="nav-link" id="projets-lien">
+                            Projets
                         </li>
-                        <li href="#contact" class="nav-link">
-                            <a href="#contact" class="nav-link">Contact</a>
+                        <li class="nav-link" id="contact-lien">
+                            Contact
                         </li>
                     
                     </ul>
@@ -54,7 +54,7 @@
         <div class="separator"></div>
 
 
-        <Main>
+        <main>
             <div id="content-container">
 
                 <!--Left Side of the page-->
@@ -112,45 +112,25 @@
 
                 <div class="about-me animate__animated">
                     <h1>About me</h1>
-                    <span></span>
 
+                    <p>Bienvenue sur mon portfolio en ligne ! Je suis un développeur web et Android passionné et talentueux, fier de mes compétences et de mon parcours. Au cours de mes études et de mes projets personnels, j'ai affiné mes compétences en développement web et Android, et je suis prêt à les utiliser pour ajouter de la valeur à tout projet sur lequel je travaillerai.
+                    </p>
+                    <p>
+                        Je suis un travailleur déterminé et créatif, capable de concevoir et de développer des applications web et Android performantes et esthétiquement plaisantes. Je suis également en mesure de travailler en équipe, ce qui est un atout important pour tout projet de développement de logiciels.
+                    </p>
+                    <p>
+                        Sur ce site, vous trouverez un aperçu de mes compétences, de mes projets et de mon parcours. J'espère que vous prendrez le temps de parcourir mon portfolio et de découvrir comment je peux ajouter de la valeur à vos projets de développement de logiciels. N'hésitez pas à me contacter si vous avez des questions ou souhaitez en savoir plus sur mes compétences et mon expérience.
+                    </p>
                     <section id="paragraph">
-                        <p>Hello my name is James Bell, currently a student at the Depatment of Commputer Programming,
-                            La Cité Collegiale, Ottawa, CANADA.
-                        </p>
-                        <p>
-                            I am interested in Web development and Android development I always thought that
-                            Programming had a lot things to learn.
-                        </p>
-                        <p>
-                            This is a personal website that i have created to present the projects
-                            i did while i was learning at School.
-                        </p>
                     </section>
                 </div>
 
-                
-                <!--Education section-->
-
-                <div class="education animated__animated">
-                    <h1>Education</h1>
-                    <div class="school">
-                        <div class="indicator">
-                            <span></span>
-                            <span id="span"></span>
-                        </div>
-                        <h2>La Cité Collegiale</h2>
-                        <pre>2022 - Now</pre>
-                        <p>Computer programming</p>
-                    </div>
-                </div>
             </div>
 
             <!--Projects Section-->
 
             <section id="projects">
                 <H1 class="project-h1 animate__animated">MY PROJECTS</H1>
-                <h2>Hover me</h2>
                 <div class="Projects-grid-Wrapper">
                     <figure class="animated__animated">
                         <span>BLACKJACK</span>
@@ -243,18 +223,18 @@
             <!--Contacts Section-->
 
             <section id="contact">
-                <div class="contactWrapper">
+                <div class="contactWrapper animate__animated" id="links">
                     <div>
                         <span class="contact-tittle">Phone :</span>
-                        <span class="contact-data data1">3432026321</span>
+                        <span class="contact-data data1">1111111111</span>
                     </div>
                     <div>
                         <span class="contact-tittle">Instagram :</span>
-                        <span class="contact-data data2">james_joestarr</span>
+                        <span class="contact-data data2">@instagram</span>
                     </div>
                     <div>
                         <span class="contact-tittle">Email :</span>
-                        <span class="contact-data data3">belljamesp@gmail.com</span>
+                        <span class="contact-data data3">email@email.com</span>
                     </div>
 
                     <div class="contacts__social">
@@ -266,7 +246,7 @@
                     </div>
                 </div>
 
-                <div class="contact-container">
+                <div class="contact-container animate__animated" id="form">
                     <h1>GET IN TOUCH</h1>
                     <form action="https://formspree.io/f/xbjbkjdp" method="POST">
                         <input type="text" id="Name" name="name" placeholder="Your Name" required>
@@ -277,11 +257,11 @@
                 </div>
 
             </section>
-        </Main>
+        </main>
 
 
         <footer>
-            <div>© 2022 James Bell.</div>
+            <div>© 2023 James Bell.</div>
             <div>All Rights Reserved</div>
         </footer>
     </div>

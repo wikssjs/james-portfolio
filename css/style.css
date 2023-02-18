@@ -9,6 +9,10 @@ body {
     overflow-y: hidden;
 }
 
+main{
+    margin-top: 30px;
+}
+
 #cursor {
     width: 50px;
     height: 50px;
@@ -64,6 +68,7 @@ body {
     height: 60px;
     box-shadow: 2px 2px 2rem 5px rgba(0, 0, 0, .6);
     background-color: #343434;
+    height: 100px;
 }
 
 #pageWrapper {
@@ -74,10 +79,8 @@ body {
     flex-direction: column;
 }
 
-p {
-    font-family: 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', serif;
-    font-weight: 550;
-    color: #fff;
+p,h1,h2,pre,li,a {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .nav-container {
@@ -103,8 +106,12 @@ li {
     position: relative;
     text-decoration: none;
     letter-spacing: .5px;
-    font-size: .8em;
+    font-size: 1.5em;
     text-align: center;
+}
+
+.my_name{
+    font-size: 1.5em;
 }
 
 /* Navigation Item on Hover */
@@ -125,12 +132,13 @@ li:hover::after {
     width: 100%;
 }
 
-a {
+li,a{
     text-decoration: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
-    font-size: 1.6em;
+    font-size: 2em;
     padding: 0 10px;
+    cursor: pointer;
 }
 
 /* Hamburger Menu */
@@ -152,6 +160,7 @@ a {
 #content-container {
     display: flex;
     justify-content: center;
+    height: 90vh;
 }
 
 @keyframes bigger {
@@ -174,6 +183,7 @@ a {
     transition: all 1600ms ease;
     box-shadow: -4px -4px 20px black;
     transform-origin: left;
+    width: 500px;
 }
 
 #leftSide-Wrapper h1 {
@@ -190,8 +200,8 @@ a {
 .presentation p {
     margin-left: 30px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 1.5em;
+    font-weight: 300;
+    font-size: 2em;
     max-width: 700px;
     letter-spacing: 1.5px;
 }
@@ -285,6 +295,7 @@ a {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 5em;
     text-decoration: underline;
+    font-weight: bold;
 }
 
 .separator {
@@ -322,54 +333,50 @@ a {
 }
 
 .personal {
-    height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     animation: bigger;
-    background: url(../img/wave.svg) repeat space;
     box-shadow: -4px 4px 20px black;
 }
 
 .about-me {
-    position: relative;
-    width: 60%;
-    height: 350px;
+    width: 76%;
     background-color: burlywood;
     display: flex;
     flex-direction: column;
-    align-items: center;
     animation-duration: .5s;
     border-radius: 20px;
     transition: all ease 1600ms;
     box-shadow: -4px -4px 20px black;
     transform-origin: top;
-    display: none;
+    margin-top: 15%;
+    gap: 20px;
+    align-items: center;
 }
 
 .about-me H1 {
-    position: absolute;
-    left: 3%;
     color: #232b2b;
     font-size: 4em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    background-color: #00539CFF;
+    border-radius: 30px;
 }
 
 #paragraph {
+    background-color: violet;
     margin-top: 80px;
 }
 
 .about-me p {
-    margin-left: 30px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    max-width: 700px;
-    font-size: 1.3em;
-    width: 500px;
+    font-weight: lighter;
+    font-size: 1.6em;
     letter-spacing: 2px;
-    right: 20%;
     padding: 5px;
+    width: 100%;
+    font-weight: 200;
 }
 
 .about-me span {
@@ -382,29 +389,38 @@ a {
 }
 
 .education {
-    position: relative;
-    width: 60%;
-    height: 250px;
-    background-color: burlywood;
     display: flex;
     flex-direction: column;
+    justify-content: baseline;
     align-items: center;
+    width: 76%;
+    background-color: burlywood;
     animation: bigger;
     animation-duration: 1s;
     border-radius: 20px;
     transition: all ease 1600ms;
     box-shadow: -4px 4px 20px black;
     transform-origin: top;
+    margin-top: 10%;
+}
+
+.education_inner{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 
+
 .education H1 {
-    position: absolute;
-    left: 3%;
     color: #232b2b;
     font-size: 4em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
+    font-weight: bold;
+    background-color: #00539CFF;
+    border-radius: 30px;    
+    text-align: center;
+}
     
     .education h2 {
     color: #00755E;
@@ -422,14 +438,15 @@ a {
     }
     
     .school {
-    position: relative;
-    margin-top: 80px;
+        display: flex;
+        flex-direction: column;
     }
     
     #projects {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 10%;
     }
     
     #projects h2 {
@@ -447,6 +464,7 @@ a {
     gap: 100px;
     margin: 200px;
     align-items: center;
+
     }
     
     figure img[alt="project"] {
@@ -577,6 +595,7 @@ a {
     .contactWrapper li {
     list-style: none;
     text-decoration: underline;
+    font-size: 1em;
     }
     
     .contacts__social {
@@ -1535,6 +1554,7 @@ footer div {
 
     .my_name {
         margin-left: 20px;
+        font-size: 2em;
     }
 
     .nav-container {
@@ -1553,7 +1573,7 @@ footer div {
     }
 
     .about-me p {
-        width: 600px;
+        max-width: 80%;
     }
 
     .about-me span {
@@ -1563,11 +1583,11 @@ footer div {
     }
 
     #leftSide-Wrapper {
-        width: 700px;
+        width: 40%;
     }
 
     .RightSide-Wrapper {
-        width: 700px;
+        width: 40%;
     }
 
 }
